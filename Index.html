@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate Business Card</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Card Styling */
+        .business-card {
+            width: 350px;
+            height: 450px;
+            background: linear-gradient(135deg, #A800A8, #6A007A);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .business-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header Styling */
+        .card-header h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #FFD700;
+        }
+
+        .card-header p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Body Styling */
+        .card-body p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 12px 0;
+            font-weight: 400;
+        }
+
+        .card-body strong {
+            color: #FFD700;
+        }
+
+        /* Footer Styling */
+        .card-footer {
+            margin-top: 20px;
+        }
+
+        .card-footer p {
+            font-size: 12px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .social-icon {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 14px;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icon::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #FFD700;
+            bottom: -3px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #FFD700;
+            transform: translateY(-5px);
+        }
+
+        .social-icon:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="business-card">
+        <div class="card-header">
+            <h1>MindMate</h1>
+            <p>Your Digital Mental Health Companion</p>
+        </div>
+        <div class="card-body">
+            <p><strong>Name:</strong> Gokul N. R.</p>
+            <p><strong>Role:</strong> Founder & Developer</p>
+            <p><strong>Email:</strong> gokul@gmail.com</p>
+            <p><strong>Website:</strong> www.mindmate.com</p>
+        </div>
+        <div class="card-footer">
+            <p>Connect with us on:</p>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Twitter</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
